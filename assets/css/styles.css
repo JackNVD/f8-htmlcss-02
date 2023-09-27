@@ -48,6 +48,23 @@ a {
     opacity: 0.9;
 }
 
+.heading {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: #171100;
+}
+
+.heading.lv1 {
+    font-size: 5.8rem;
+    line-height: 1.173;
+}
+
+.heading.lv2 {
+    font-size: 3.8rem;
+    line-height: 1.263;
+}
+
 /*============ Header ================*/
 .header {
     background: #fffcf4;
@@ -128,6 +145,8 @@ a {
 /* Hero left */
 
 .hero .media-block .img {
+    /* sử dụng display block để loại bỏ đường baseline */
+    display: block;
     width: 470px;
     height: 685px;
     border-radius: 20px;
@@ -147,6 +166,7 @@ a {
 
 .hero-sumary .item {
     display: flex;
+    align-items: center;
 }
 
 .hero-sumary .item:nth-child(2) .icon {
@@ -194,15 +214,6 @@ a {
 .hero .content-block {
     width: 52%;
     padding: 56px 0 0 130px;
-}
-
-.content-block .heading {
-    font-family: var(--font-heading);
-    font-size: 5.8rem;
-    font-weight: 700;
-    line-height: 1.173;
-    letter-spacing: -0.02em;
-    color: #171100;
 }
 
 .content-block .desc {
@@ -264,4 +275,46 @@ a {
     font-weight: 700;
     line-height: 1.227;
     color: #171100;
+}
+
+/* ========= Popular ========= */
+.popular {
+    padding: 65px 0px;
+    margin-top: 135px;
+}
+
+.popular-top {
+    display: flex;
+    align-items: center;
+}
+
+.popular-top .desc {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.67;
+    color: #5f5b53;
+    width: 458px;
+}
+
+.popular-top .controls {
+    display: flex;
+    margin-left: auto;
+    gap: 18px;
+}
+
+.controls .control-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid var(--primary-color);
+    border-radius: 50%;
+    color: var(--primary-color);
+}
+
+.controls .control-btn:hover {
+    background: var(--primary-color);
+    color: white;
 }
