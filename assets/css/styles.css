@@ -66,6 +66,21 @@ a {
     line-height: 1.263;
 }
 
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-clamp.line2 {
+    --line-clamp: 2;
+}
+
+.break-all {
+    word-break: break-all;
+}
+
 /*============ Header ================*/
 .header {
     background: #fffcf4;
@@ -372,6 +387,7 @@ a {
 }
 
 .popular .course-item .title a {
+    padding-right: 6px;
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 1.67;
