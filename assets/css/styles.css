@@ -434,10 +434,19 @@ a {
     background: #2e2100;
 }
 
+.feedback .feedback-list {
+    display: flex;
+    overflow: hidden;
+}
+
 .feedback .feedback-item {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
+    flex-shrink: 0;
+    transform: translateX(-100%);
+    transition: all ease 0.3s;
 }
 
 .feedback-item .avatar {
@@ -495,3 +504,5 @@ a {
     line-height: 1.538;
     color: #ffffff;
 }
+
+/*  */
